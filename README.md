@@ -4,7 +4,7 @@ This is a repo for the work done on the group project in CIS 238 (Internet Media
 
 ## Contributors
 - [Ethan Onweller](https://github.com/ethanonweller)
--
+- [Skyler Ruiter](https://github.com/Skylake0106)
 -
 -
 
