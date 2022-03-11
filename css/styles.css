@@ -1,0 +1,23 @@
+/*
+Group 3
+File Name: styles.css
+Date: 3/11/21
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, h4, ol, ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* CSS for body and images */
+img {
+    display: block;
+    max-width: 100%;
+}
