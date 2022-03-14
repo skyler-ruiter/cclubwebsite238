@@ -169,6 +169,10 @@ main {
     border-bottom: 2px solid #C9CEBD;
   }
 
+  .hero {
+    display: none;
+  }
+
 }  /* ========== This is the closing brace for the tablet media query. ==========*/
 
 /* Media Query for Desktop Viewports */
@@ -192,6 +196,15 @@ main {
 
   .grid a:nth-child(3), .grid a:nth-child(5) {
     border-right: none;
+  }
+
+  .hero {
+    display: block;
+    width: 100%;
+  }  
+
+  nav {
+    margin-bottom: 0;
   }
 
 } /* ========== This is the closing brace for the desktop media query. ==========*/
