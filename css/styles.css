@@ -1,7 +1,7 @@
 /*
 Group 3
 File Name: styles.css
-Date: 3/11/21
+Date: 3/11/22
 
 Main Colors:
     Sapphire Blue   #0065A4
@@ -47,7 +47,7 @@ body {
 }
 
 /* CSS for Header */
-header img {
+.logo {
   width: 50%;
   margin: 0 auto;
 }
@@ -99,11 +99,11 @@ nav li:last-child {
   font-size: 1.25em;
 }
 
-.grid a:nth-child(2) {
+.grid a:nth-child(3) {
   border-right: 2px solid #C9CEBD
 }
 
-.grid a:nth-child(4) {
+.grid a:nth-child(5) {
   border-right: 2px solid #C9CEBD
 }
 
@@ -118,7 +118,7 @@ nav li:last-child {
 
 /* CSS for Main Content */
 main {
-  clear: left;
+  clear: both;
   
 }
 
@@ -135,12 +135,64 @@ main {
     display: none;
   }
 
+  .grid {
+    display: block;
+  }
+
+  .grid a {
+    border: none;
+    display: inline-block;
+    font-size: 1.7em;
+    padding: 0 1%;
+    border-right: 2px solid #C9CEBD;
+    margin: 2% 0;
+  }
+
+  #name {
+    font-size: 2.5em;
+    display: block;
+    clear: right;
+    border-right: none;
+  }
+
+  .grid a:last-child {
+    border-right: none;
+  }
+
+  .grid img {
+    width: 10%;
+    float: left;
+    margin-left: 3%;
+  }
   
+  nav {
+    border-bottom: 2px solid #C9CEBD;
+  }
 
 }  /* ========== This is the closing brace for the tablet media query. ==========*/
 
 /* Media Query for Desktop Viewports */
 @media screen and (min-width: 970px), print {
+
+  .grid img {
+    width: 6%;
+  }
+
+ .grid {
+   text-align: right;
+ }
+
+  #name {
+    display: none;
+  }
+
+  .grid a {
+    border: none;
+  }
+
+  .grid a:nth-child(3), .grid a:nth-child(5) {
+    border-right: none;
+  }
 
 } /* ========== This is the closing brace for the desktop media query. ==========*/
 
