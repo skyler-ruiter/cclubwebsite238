@@ -96,7 +96,7 @@ nav li:last-child {
   color: white;
   border-bottom: 2px solid #C9CEBD;
   padding: 5%;
-  font-size: 1.25em;
+  font-size: 1.4em;
 }
 
 .grid a:nth-child(3) {
@@ -109,7 +109,7 @@ nav li:last-child {
 
 #name {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-decoration: none;
   color: white;
   grid-column: 1 / span 2;
@@ -142,10 +142,10 @@ main {
   .grid a {
     border: none;
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 1.75em;
     padding: 0 1%;
     border-right: 2px solid #C9CEBD;
-    margin: 2% 0;
+    margin: 1% 0;
   }
 
   #name {
@@ -179,7 +179,10 @@ main {
 @media screen and (min-width: 970px), print {
 
   .grid img {
-    width: 6%;
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 5%;
   }
 
  .grid {
@@ -192,6 +195,9 @@ main {
 
   .grid a {
     border: none;
+    font-size: 2em;
+    padding-right: 1%;
+    margin-top: 2%;
   }
 
   .grid a:nth-child(3), .grid a:nth-child(5) {
@@ -205,6 +211,15 @@ main {
 
   nav {
     margin-bottom: 0;
+    
+  }
+
+  header {
+    margin-bottom: 2%;
+  }
+
+  .grid a:hover {
+    color: #C9CEBD;
   }
 
 } /* ========== This is the closing brace for the desktop media query. ==========*/
