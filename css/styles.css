@@ -15,7 +15,7 @@ Main Colors:
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2, h3, h4, ol, ul {
+body, header, nav, main, footer, img, h1, h2, h3, h4, ol, ul, figure, figcaption, section, article, aside {
     border: 0;
     margin: 0;
     padding: 0;
@@ -207,7 +207,32 @@ main {
   .hero {
     display: block;
     width: 100%;
-  }  
+  } 
+
+  #parallelogram {
+    width: 500px;
+    height: 100px;
+    transform: skew(20deg);
+    background: #C9CEBD;
+    border: 2px solid #0065A4;
+    box-shadow: 4px 4px 10px black;
+  }
+
+  #parallelogram figcaption {
+    font-size: 2.5em;
+    color:#0065A4;
+    transform: skew(-20deg);
+    text-align: center;
+    padding: 5% 0;
+    font-weight: bold;
+  }
+
+  .centered {
+    position: fixed;
+    left: 50%;
+    margin-left: -250px;
+    top:22%;
+  }
 
   nav {
     margin-bottom: 0;
@@ -244,6 +269,7 @@ main {
 
 /* CSS for Footer */
 footer {
+  clear: both;
   text-align: center;
   font-size: 0.7em;
 }
@@ -258,13 +284,13 @@ footer a {
 /* CSS for index.html */
 
 .large-buttons {
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 3% auto;
   background-color: #C9CEBD;
   border: 2px solid black;
 }
 
-.large-buttons h2 { 
+.large-buttons figcaption { 
   text-align: center;
   color: #0065A4;
 }
