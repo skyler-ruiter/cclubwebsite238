@@ -1,0 +1,283 @@
+/*
+Group 3
+File Name: styles.css
+Date: 3/11/22
+
+Main Colors:
+    Sapphire Blue   #0065A4
+    Powder Blue     #A1D2CE
+    Ash Gray        #C9CEBD
+    Jet             #363535
+
+    Main Fonts:
+    Source Code Pro
+    (Other Fonts Here)
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, h4, ol, ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* CSS for body and images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+body {
+  background-color: #363535;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* CSS for Header */
+.logo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* CSS for Navigation Bar */
+nav {
+  width: 100%;
+  background-color: #0065A4;
+  margin-bottom: 2%;
+}
+
+/* CSS for if we want a traditional nav bar */
+/* nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.5em;
+  border-top: 2px solid #C9CEBD;
+  padding: 2%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav li:last-child {
+  border-bottom: 2px solid #C9CEBD;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  clear: left;
+  text-align: center;
+}
+
+.grid a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #C9CEBD;
+  padding: 5%;
+  font-size: 1.4em;
+}
+
+.grid a:nth-child(3) {
+  border-right: 2px solid #C9CEBD
+}
+
+.grid a:nth-child(5) {
+  border-right: 2px solid #C9CEBD
+}
+
+#name {
+  font-weight: bold;
+  font-size: 1.75em;
+  text-decoration: none;
+  color: white;
+  grid-column: 1 / span 2;
+  padding: 2%;
+}
+
+/* CSS for Main Content */
+main {
+  clear: both;
+}
+
+/* MEDIA QUERIES */
+
+/* Media Query for Tablet Viewports */
+@media screen and (min-width: 630px), print {
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid a {
+    border: none;
+    display: inline-block;
+    font-size: 1.75em;
+    padding: 0 1%;
+    border-right: 2px solid #C9CEBD;
+    margin: 1% 0;
+  }
+
+  #name {
+    font-size: 2.5em;
+    display: block;
+    clear: right;
+    border-right: none;
+  }
+
+  .grid a:last-child {
+    border-right: none;
+  }
+
+  .grid img {
+    width: 10%;
+    float: left;
+    margin-left: 3%;
+  }
+  
+  nav {
+    border-bottom: 2px solid #C9CEBD;
+  }
+
+  .hero {
+    display: none;
+  }
+
+}  /* ========== This is the closing brace for the tablet media query. ==========*/
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 970px), print {
+
+  .grid img {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 5%;
+  }
+
+ .grid {
+   text-align: right;
+ }
+
+  #name {
+    display: none;
+  }
+
+  .grid a {
+    border: none;
+    font-size: 2em;
+    padding-right: 1%;
+    margin-top: 2%;
+  }
+
+  .grid a:nth-child(3), .grid a:nth-child(5) {
+    border-right: none;
+  }
+
+  .hero {
+    display: block;
+    width: 100%;
+  }  
+
+  nav {
+    margin-bottom: 0;
+    
+  }
+
+  header {
+    margin-bottom: 2%;
+  }
+
+  .grid a:hover {
+    color: #C9CEBD;
+  }
+
+} /* ========== This is the closing brace for the desktop media query. ==========*/
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 2561px), print {
+    #container {
+        width: 2560px;
+        margin: 0 auto;
+    }
+} /* ========== This is the closing brace for the large desktop media query. ==========*/
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: black;
+        color: white;
+    }
+}  /* ========== This is the closing brace for the print media query. ==========*/
+
+/* END OF MEDIA QUERIES */
+
+/* CSS for Footer */
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  padding-top: 3em;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS for individual pages */
+
+/* CSS for contact.html */
+#words {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#words a {
+  color: #0065A4;
+  text-decoration: none;
+}
+
+/* CSS for index.html */
+
+.large-buttons {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #C9CEBD;
+  border: 2px solid black;
+}
+
+.large-buttons h2 { 
+  text-align: center;
+  color: #0065A4;
+}
