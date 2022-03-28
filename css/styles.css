@@ -228,7 +228,7 @@ main {
   }
 
   .centered {
-    position: fixed;
+    position: absolute;
     left: 50%;
     margin-left: -250px;
     top:22%;
@@ -284,13 +284,15 @@ footer a {
 /* CSS for index.html */
 
 .large-buttons {
-  width: 75%;
+  width: 65%;
   margin: 3% auto;
   background-color: #C9CEBD;
   border: 2px solid black;
+  
 }
 
 .large-buttons figcaption { 
   text-align: center;
   color: #0065A4;
+  font-size: 1.5em;
 }
