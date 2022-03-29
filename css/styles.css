@@ -227,6 +227,10 @@ main {
     font-weight: bold;
   }
 
+  #parallelogram a {
+    text-decoration: none;
+  }
+
   .centered {
     position: absolute;
     left: 50%;
@@ -236,6 +240,7 @@ main {
 
   nav {
     margin-bottom: 0;
+    padding-bottom: 0.5%;
     
   }
 
@@ -247,7 +252,28 @@ main {
     color: #C9CEBD;
   }
 
+  #index-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+  }
+
+  #index-grid .sub-text {
+    font-size: 2em;
+  }
+
 } /* ========== This is the closing brace for the desktop media query. ==========*/
+
+/* Media Query for medium sized desktops */
+@media screen and (min-width: 1400px), print {
+  div .large-buttons {
+    max-width: 400px;
+  }
+
+  #index-grid .sub-text {
+    font-size: 2.5em;;
+  }
+}
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 2561px), print {
@@ -284,15 +310,23 @@ footer a {
 /* CSS for index.html */
 
 .large-buttons {
-  width: 65%;
+  max-width: 300px;
   margin: 3% auto;
   background-color: #C9CEBD;
-  border: 2px solid black;
-  
+  position: relative;
 }
 
 .large-buttons figcaption { 
   text-align: center;
   color: #0065A4;
   font-size: 1.5em;
+}
+
+.sub-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 1%;
 }
