@@ -131,7 +131,7 @@ main {
     display: block;
   }
 
-  .mobile {
+  .mobile, .centered {
     display: none;
   }
 
@@ -171,6 +171,38 @@ main {
 
   .hero {
     display: none;
+  }
+
+  .big-calander caption {
+  font-size: 2.5em;
+  margin: 1% 0;
+}
+
+  .big-calander table {
+    border-collapse: collapse;
+    border: 3px solid #0065A4;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .big-calander th, td {
+    border: 3px solid #0065A4;
+    padding: 1%;
+    text-align: center;
+  }
+
+  #week, #date {
+    width: 10%;
+  }
+
+  .big-calander tr:nth-child(odd) {
+    background-color:#4d4b4b;
+  }
+
+  .big-calander tr:first-child {
+    background-color: #8c8d8a;
+    color: black;
+    font-size: 1.15em;
   }
 
 }  /* ========== This is the closing brace for the tablet media query. ==========*/
@@ -232,10 +264,11 @@ main {
   }
 
   .centered {
+    display: block;
     position: absolute;
     left: 50%;
     margin-left: -250px;
-    top:22%;
+    top:17%;
   }
 
   nav {
@@ -272,6 +305,10 @@ main {
 
   #index-grid .sub-text {
     font-size: 2.5em;;
+  }
+
+  .centered {
+    top: 22%;
   }
 }
 
@@ -314,6 +351,11 @@ footer a {
   margin: 3% auto;
   background-color: #C9CEBD;
   position: relative;
+  background-color:#363535;
+}
+
+.large-buttons img, .sub-text {
+  border-radius: 10px;
 }
 
 .large-buttons figcaption { 
@@ -329,4 +371,15 @@ footer a {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   padding: 1%;
+}
+
+/* CSS for calander.html */
+.calander h2 {
+  text-align: center;
+  margin: 2% 0 4% 0;
+  font-size: 1.75em;
+}
+
+.calander section h3 {
+  text-align: center;
 }
