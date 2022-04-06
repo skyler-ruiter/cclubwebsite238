@@ -383,3 +383,15 @@ footer a {
 .calander section h3 {
   text-align: center;
 }
+
+/* CSS for contact.html */
+#words {
+width: 75%;
+margin: 0 auto;
+text-align: center;
+}
+
+#words a {
+color: #0065A4;
+text-decoration: none;
+}

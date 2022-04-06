@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Group 3, web_form.html, 3/11/22 -->
+
+<!--
+    Main Colors:
+    Sapphire Blue   #0065A4
+    Powder Blue     #A1D2CE
+    Ash Gray        #C9CEBD
+    Jet             #363535
+
+    Main Fonts:
+    Source Code Pro
+    (Other Fonts Here)
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GVSU Computing Club</title>
+        <link rel="icon" type="image" href="/images/GVSU_Computing_Club_logo.png">
+    </head>
+    
+    <body>
+        <div id="container">
+            
+            <header>
+            
+                <nav>
+                    <div class="grid">
+                        <img class="tablet-desktop" src="/images/GVSU_Computing_Club_logo.png" alt="Computing Club Logo">
+                        <a id="name" href="index.html">GVSU Computing Club</a>
+                        <a href="about.html">About</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="resources.html">Resources</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+            
+                </nav>
+                <img class="mobile logo" src="/images/GVSU_Computing_Club_logo.png" alt="Computing Club Logo">
+                <figure class="tablet-desktop">
+                    <img class="hero" src="/images/heroimage.jpg" alt="programming image">
+                    <div class="centered" id="parallelogram">
+                        <a href="index.html">
+                            <figcaption>GVSU Computing Club</figcaption>
+                        </a>
+                    </div>
+            
+                </figure>
+            
+            </header>
+
+            <main>
+                <div id="words">
+                    <p>Do you want to be notified of upcoming events, club meetings, and guest speakers?</p>
+                    <p>Enter your information below to join our newsletter</p>
+                
+                <form id="form" action="action.php" method="post" enctype="application/x-www-form-urlencoded"> <!-- this encodes all characters before post -->
+                    <label for="fname">First name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+                    <p>You can view club details on our <a href="https://gvsu.campuslabs.com/engage/organization/cis-computing-club">Laker Link</a> 
+                    or join <a href="https://discord.gg/rBatTSWCdT">GVSU's CIS Discord</a> where we also post updates and new information.
+                    The discord has channels for most CIS courses offered at GVSU, book exchanges, internships/jobs, resources, and lots more! If you can't find your course in the list of 
+                    text channels you can ask for one to be created in <a href="https://discord.gg/vA2jfEfYbd">#course-request</a>.</p>
+                    <p>There are multiple professors, academic advisors, and other students of all grade levels in there as well.</p>
+
+                    <iframe src="https://discord.com/widget?id=954588239463845919&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+                    <p>If you have any questions or concerns feel free to contact us</p>
+                    <p>Club Email: <a href="mailto:cclub@mail.gvsu.edu">cclub@mail.gvsu.edu</a></p>
+                    <p>President: <a href="mailto:ruitersk@mail.gvsu.edu">ruitersk@mail.gvsu.edu</a></p>
+                    <p>Vice President: <a href="mailto:martian4@mail.gvsu.edu">martian4@mail.gvsu.edu</a></p>
+                </div>
+            </main>
+            
+            <footer>
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                <p><a href="mailto:cclub@mail.gvsu.edu">cclub@mail.gvsu.edu</a></p>
+            </footer>
+
+        </div>
+    </body>
+
+</html>
