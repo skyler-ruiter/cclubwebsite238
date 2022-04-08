@@ -205,6 +205,10 @@ main {
     font-size: 1.15em;
   }
 
+  #words {
+    font-size: 1.25em;
+  }
+
 }  /* ========== This is the closing brace for the tablet media query. ==========*/
 
 /* Media Query for Desktop Viewports */
@@ -239,7 +243,11 @@ main {
   .hero {
     display: block;
     width: 100%;
-  } 
+  }
+  
+  #parallelogram figcaption:hover {
+    color: #0375bc;
+  }
 
   #parallelogram {
     width: 500px;
@@ -293,6 +301,30 @@ main {
 
   #index-grid .sub-text {
     font-size: 2em;
+  }
+
+  #about p {
+    font-size: 1.25em;
+  }
+
+  #about h2 {
+    font-size: 2em;
+  }
+
+  #about h3 {
+    font-size: 1.5em;
+  }
+
+  #words {
+    font-size: 1.5em;
+  }
+
+  .intro-message {
+    font-size: 1.25em;
+  }
+
+  .large-buttons:hover {
+    transform:translateY(10px);
   }
 
 } /* ========== This is the closing brace for the desktop media query. ==========*/
@@ -472,5 +504,13 @@ text-decoration: none;
 .about-links a {
   text-decoration: none;
   color: #A1D2CE;
-  
+}
+
+.about-links a {
+  font-size: 1.1em;
+}
+
+/* CSS For contact page */
+#discord {
+  max-width: 90%;
 }
