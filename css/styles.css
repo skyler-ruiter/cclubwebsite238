@@ -122,6 +122,39 @@ main {
   
 }
 
+/* CSS from Ryan */
+.grid2 {
+  padding: 3%;
+
+  padding-top: 0;
+
+  text-align: center;
+
+  grid-gap: 2%;
+}
+
+.grid2 aside {
+  text-align: center;
+}
+
+.grid2 h2 {
+  font-size: 2.5em;
+}
+
+.grid2 figure {
+  text-align: center;
+
+  padding: 3%;
+}
+
+.grid2 p {
+  border: 1px solid #C9CEBD;
+
+  border-radius: 8px;
+
+  padding: 2%;
+}
+
 /* MEDIA QUERIES */
 
 /* Media Query for Tablet Viewports */
@@ -207,6 +240,33 @@ main {
 
   #words {
     font-size: 1.25em;
+  }
+
+  /* Ryan Styles */ 
+  .grid2 {
+    display: grid;
+  
+    padding-bottom: 2%;
+  }
+  
+  .grid2 aside {
+    text-align: center;
+  }
+  
+  .grid2 h2 {
+    font-size: 2em;
+  }
+  
+  .grid2 figure {
+    padding: 3%;
+  }
+  
+  .gridtop {
+    grid-column: 1 / span 3;
+  
+    font-size: 1.5em;
+  
+    text-align: center;
   }
 
 }  /* ========== This is the closing brace for the tablet media query. ==========*/
@@ -327,6 +387,31 @@ main {
     transform:translateY(10px);
   }
 
+  /* Ryan Styles */
+  .grid2 {
+    display: grid;
+  
+    grid-template-columns: auto auto auto;
+  
+    /*repeat(3, minmax(0, 1fr));*/
+  
+    padding: 2%;
+  
+    justify-content: center;
+  }
+  
+  .grid2 img {
+    max-width: 100%;
+  }
+  
+  .gridtop {
+    grid-column: 1 / span 3;
+  
+    font-size: 1.5em;
+  
+    text-align: center;
+  }
+
 } /* ========== This is the closing brace for the desktop media query. ==========*/
 
 /* Media Query for medium sized desktops */
@@ -341,6 +426,19 @@ main {
 
   .centered {
     top: 22%;
+  }
+
+  .grid2 {
+    grid-template-columns: auto auto auto;
+  
+  }
+  
+  .gridtop {
+    grid-column: 1 / span 3;
+  }
+  
+  .gridbottom {
+    grid-column: 3 / span 1;
   }
 }
 
