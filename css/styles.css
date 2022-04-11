@@ -553,11 +553,11 @@ print {
   margin-bottom: 5%;
 }
 
-#resource h2 {
+.resource h2 {
   text-align: center;
 }
 
-#resource {
+.resource {
   padding: 5% 0;
 }
 
@@ -582,7 +582,7 @@ print {
 
 /* Tablet Viewport changes for resources.html */
 @media screen and (min-width: 630px), print {
-  #resource {
+  .resource {
     padding: 2% 0;
   }
 
@@ -590,7 +590,7 @@ print {
     font-size: 1.5em;
   }
 
-  #resource h2 {
+  .resource h2 {
     font-size: 2em;
   }
 }
@@ -617,19 +617,19 @@ print {
   margin: 0 auto;
 }
 
-#resource a  {
+.resource a  {
   text-decoration: none;
   color: #A1D2CE;
 }
 
-#resource h1 {
+.resource h1 {
   font-size: 2.25em;
 }
 
 /* Desktop Style Changes for project.html */
 @media screen and (min-width: 970px),
 print {
-  #resource p {
+  .resource p {
     font-size: 1.5em;
   }
 }
