@@ -515,6 +515,14 @@ print {
 }
 
 /* ~~~~contact.html Styles~~~~ */
+
+/* ~~~~web_form.html Styles~~~~ */
+
+#form {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
 #words {
   width: 75%;
   margin: 0 auto;
