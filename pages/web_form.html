@@ -77,10 +77,10 @@
                     <fieldset> 
                         <legend>Contact Form</legend>
                         <label for="fname">First name</label><br>
-                        <input type="text" size="30" id="fname" name="fname" placeholder="First name"><br><br>
+                        <input type="text" size="30" id="fname" name="fname" placeholder="First name" required><br><br>
 
                         <label for="lname">Last name</label><br>
-                        <input type="text" size="30" id="lname" name="lname" placeholder="Last name"><br><br>
+                        <input type="text" size="30" id="lname" name="lname" placeholder="Last name" required><br><br>
 
                         <label for="email">*Email</label><br>
                         <input type="email" size="30" id="email" name="email" placeholder="Email" required><br><br>
@@ -109,7 +109,18 @@
                         <input type="submit" value="Submit" id="submit">
 
                     </fieldset> 
-                </form> 
+                    <br><br><br> <!-- Adds spacing between fieldsets-->
+                </form>
+                
+                <form id="form" class="tablet-desktop">
+                    <fieldset>
+                        <legend id="message_form">Additional Inquiries</legend>
+                        <br>
+                        <textarea id="comments" form="usrform">Enter text here...</textarea>
+                    </fieldset>
+                </form>
+                
+                <br><br><br>
             </main>
             
             <footer id="webform_footer">

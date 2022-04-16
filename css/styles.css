@@ -542,6 +542,63 @@ print {
   max-width: 90%;
 }
 
+#webform_footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#fname {
+  height: 2.5em;
+  font-size: 12pt;
+}
+
+#lname {
+  height: 2.5em;
+  font-size: 12pt;
+}
+
+#email {
+  height: 2.5em;
+  font-size: 12pt;
+}
+
+#submit {
+  width: 15em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1em;
+}
+
+#grade {
+  width: 15em;
+  height: 2.5em;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #807e7e;
+}
+
+#form_title {
+  font-size: 16pt;
+}
+
+#message_form {
+  font-size: 16pt;
+}
+
+
+/* Desktop Viewport Changes for web_form.html */
+@media screen and (min-width: 970px) {
+
+  #comments {
+    height: 10em;
+    width: 55em;
+  }
+
+}
+
 /* Tablet Viewport Changes for contact.html */
 @media screen and (min-width: 630px),
 print {
