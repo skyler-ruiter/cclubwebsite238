@@ -426,6 +426,10 @@ print {
   #about h3 {
     font-size: 1.5em;
   }
+
+  .about-links a {
+    color: #2afaef;
+  }
 }
 
 /* ~~~~calendar.html Styles~~~~ */
@@ -585,7 +589,7 @@ print {
 
 .project-link a {
   text-decoration: none;
-  color: #A1D2CE;
+  color: #2afaef;
 }
 
 /* Tablet Viewport changes for resources.html */
@@ -654,8 +658,7 @@ print {
 
 .grid2 a {
   margin: 0 auto;
-  text-decoration: none;
-  color: #A1D2CE;
+  color: #2afaef;
 }
 
 .grid2 aside {
