@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Group 3, confirmation.html, 3/11/22 -->
+
+<!--
+    Main Colors:
+    Sapphire Blue   #0065A4
+    Powder Blue     #A1D2CE
+    Ash Gray        #C9CEBD
+    Jet             #363535
+
+    Main Fonts:
+    Source Code Pro
+    (Other Fonts Here)
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GVSU Computing Club</title>
+        <link rel="icon" type="image/png" href="../images/GVSU_Computing_Club_logo.png">
+        <script type="text/javascript">
+            let x = 8;
+        window.onload = function redirects() {
+            print_text();
+            function print_text() {
+                document.getElementById("text").innerHTML = "You will be redirected to our homepage in " + x + " seconds";
+                x = x - 1; 
+            if (x >= 0)
+                setTimeout(print_text, 1000);
+            else 
+                location.replace("../pages/index.html");
+            }
+        }
+        </script>
+    </head>
+    
+    <body>
+
+        <header>
+            <img class="mobile" src="../images/GVSU_Computing_Club_logo.png" alt="Computing Club Logo">
+        </header>
+
+        <main>
+            <div id="words">
+                <p>Thank you for subscribing to our newsletter</p>
+                <p id="text"></p>
+            </div>
+        </main>
+        
+        <footer>
+            
+        </footer>
+
+    </body>
+
+</html>
