@@ -95,11 +95,11 @@ nav {
   font-size: 1.4em;
 }
 
-.grid a:nth-child(3) {
+.grid a:nth-child(4) {
   border-right: 2px solid #C9CEBD
 }
 
-.grid a:nth-child(5) {
+.grid a:nth-child(6) {
   border-right: 2px solid #C9CEBD
 }
 
@@ -141,7 +141,8 @@ print {
   }
 
   .mobile,
-  .centered {
+  .centered,
+  .desktop-logo {
     display: none;
   }
 
@@ -188,6 +189,10 @@ print {
 /* Desktop Viewport */
 @media screen and (min-width: 970px),
 print {
+  .desktop-logo {
+    display: block;
+  }
+  
   .grid img {
     position: absolute;
     top: 1%;
@@ -210,8 +215,8 @@ print {
     margin-top: 2%;
   }
 
-  .grid a:nth-child(3),
-  .grid a:nth-child(5) {
+  .grid a:nth-child(4),
+  .grid a:nth-child(6) {
     border-right: none;
   }
 
